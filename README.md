@@ -21,26 +21,26 @@ TaskNest is a full-stack task management app with user authentication, task CRUD
 ## Project Structure
 
 TaskNest/
-├── LICENSE
-├── README.md
-├── Backend/
-│   ├── .env
-│   ├── config/
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   └── taskController.js
-│   ├── middleware/
-│   │   └── auth.js
-│   ├── models/
-│   │   ├── Task.js
-│   │   └── User.js
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   └── taskRoutes.js
-│   ├── package.json
-│   ├── package-lock.json
-│   └── server.js
-└── Frontend/
+    LICENSE
+    README.md
+    Backend/
+    ├── .env
+    ├── config/
+    ├── controllers/
+    │   ├── authController.js
+    │   └── taskController.js
+    ├── middleware/
+    │   └── auth.js
+    ├── models/
+    │   ├── Task.js
+    │   └── User.js
+    ├── routes/
+    │   ├── authRoutes.js
+    │   └── taskRoutes.js
+    ├── package.json
+    ├── package-lock.json
+    └── server.js
+    Frontend/
 	├── .env
 	├── .gitignore
 	├── dist/
