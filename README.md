@@ -20,64 +20,6 @@ TaskNest is a full-stack task management app with user authentication, task CRUD
 
 
 
-TaskNest/
-├── Backend/
-│   ├── config/
-│   │   └── db.js                    # Database configuration
-│   ├── controllers/
-│   │   ├── authController.js        # Authentication logic
-│   │   └── taskController.js        # Task CRUD operations
-│   ├── middleware/
-│   │   └── auth.js                  # JWT authentication middleware
-│   ├── models/
-│   │   ├── Task.js                  # Task model schema
-│   │   └── User.js                  # User model schema
-│   ├── routes/
-│   │   ├── authRoutes.js            # Authentication endpoints
-│   │   └── taskRoutes.js            # Task management endpoints
-│   ├── .env                         # Environment variables
-│   ├── package.json                 # Backend dependencies
-│   ├── package-lock.json
-│   └── server.js                    # Backend entry point
-│
-└── Frontend/
-    ├── src/
-    │   ├── components/
-    │   │   ├── Navbar.jsx           # Navigation component
-    │   │   ├── TaskCard.jsx         # Task display card
-    │   │   └── TaskModal.jsx        # Task create/edit modal
-    │   ├── contexts/
-    │   │   ├── AuthContext.jsx      # Authentication context
-    │   │   ├── AuthProvider.jsx     # Auth provider component
-    │   │   ├── ThemeContext.jsx     # Theme context
-    │   │   ├── ThemeProvider.jsx    # Theme provider
-    │   │   ├── useAuth.js           # Auth hook
-    │   │   └── useTheme.js          # Theme hook
-    │   ├── pages/
-    │   │   ├── Dashboard.jsx        # Main dashboard
-    │   │   ├── Login.jsx            # Login page
-    │   │   └── Register.jsx         # Registration page
-    │   ├── services/
-    │   │   └── api.js               # API service layer
-    │   ├── App.css                  # Global styles
-    │   ├── App.jsx                  # App component
-    │   ├── index.css                # Tailwind imports
-    │   └── main.jsx                 # Frontend entry point
-    ├── public/                      # Static assets
-    ├── dist/                        # Build output
-    ├── .env                         # Frontend environment variables
-    ├── .gitignore
-    ├── eslint.config.js
-    ├── index.html
-    ├── package.json                 # Frontend dependencies
-    ├── package-lock.json
-    ├── postcss.config.js
-    ├── tailwind.config.js
-    └── vite.config.js               # Vite configuration
-├── LICENSE
-└── README.md
-
-
 ## Project Structure
 
 TaskNest/
