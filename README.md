@@ -79,6 +79,29 @@ TaskNest/
 
 
 
+TaskNest/
+├── Backend/
+│ ├── config/
+│ ├── controllers/
+│ ├── middleware/
+│ ├── models/
+│ ├── routes/
+│ ├── server.js
+│ └── package.json
+│
+├── Frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── contexts/
+│ │ ├── pages/
+│ │ ├── services/
+│ │ └── main.jsx
+│ ├── public/
+│ ├── vite.config.js
+│ └── package.json
+│
+└── README.md
+
 ## Setup Instructions
 
 ### Prerequisites
