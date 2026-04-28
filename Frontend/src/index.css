@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  body {
+    @apply min-h-screen bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm transition-all duration-200 hover:bg-blue-700 hover:shadow-md active:scale-[0.99] dark:bg-blue-500 dark:hover:bg-blue-400;
+  }
+  
+  .btn-secondary {
+    @apply bg-slate-200 text-slate-800 px-4 py-2 rounded-lg shadow-sm transition-all duration-200 hover:bg-slate-300 hover:shadow-md active:scale-[0.99] dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700;
+  }
+  
+  .input-field {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none transition-colors duration-200 placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500;
+  }
+
+  .auth-input-field {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none transition-colors duration-200 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500;
+  }
+
+  .dark .date-input-dark-icon::-webkit-calendar-picker-indicator {
+    filter: invert(1) brightness(1.5) contrast(1.2);
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .dark .date-input-dark-icon {
+    color-scheme: dark;
+  }
+}
