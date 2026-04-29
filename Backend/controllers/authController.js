@@ -1,8 +1,7 @@
 
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
-
-const JWT_SECRET = process.env.JWT_SECRET || 'my-super-secret-key';
+import { JWT_SECRET } from '../config/auth.js';
 
 const generateToken = (id) => {
   return jwt.sign({ id }, JWT_SECRET, {

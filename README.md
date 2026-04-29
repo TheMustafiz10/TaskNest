@@ -22,27 +22,27 @@ TaskNest is a full-stack task management app with user authentication, task CRUD
 
 ### Project Structure
 
-```TaskNest/
-    LICENSE
-    README.md
-    Backend/
-    ├── .env
-    ├── config/
-    ├── controllers/
-    │   ├── authController.js
-    │   └── taskController.js
-    ├── middleware/
-    │   └── auth.js
-    ├── models/
-    │   ├── Task.js
-    │   └── User.js
-    ├── routes/
-    │   ├── authRoutes.js
-    │   └── taskRoutes.js
-    ├── package.json
-    ├── package-lock.json
-    └── server.js
-    Frontend/
+TaskNest/
+├── LICENSE
+├── README.md
+├── Backend/
+│   ├── .env
+│   ├── config/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── taskController.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── models/
+│   │   ├── Task.js
+│   │   └── User.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── taskRoutes.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+└── Frontend/
 	├── .env
 	├── .gitignore
 	├── dist/
@@ -101,7 +101,7 @@ Create a .env file inside Backend with the following values:
 
 ```env
 MONGODB_URI=mongodb://localhost:27017/tasknest
-JWT_SECRET=your_jwt_secret_here
+JWT_SECRET=your_jwt_here
 PORT=5000
 ```
 
@@ -127,7 +127,19 @@ The frontend uses /api by default. If your frontend runs separately from the bac
 VITE_API_URL=http://localhost:5000/api
 ```
 
-### 6. Start the backend server
+### 6. Deploying to Vercel
+
+If you deploy the frontend to Vercel, keep the project root set to `Frontend/` so the bundled API route in `Frontend/api/[...path].js` is deployed alongside the app. Add these environment variables in Vercel:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+VITE_API_URL=/api
+```
+
+The app is designed to call the API from the same Vercel domain, so `/api` should work in production without a separate backend URL.
+
+### 7. Start the backend server
 
 ```bash
 cd Backend
@@ -140,7 +152,7 @@ If no dev script is defined, start the server with:
 node server.js
 ```
 
-### 7. Start the frontend app
+### 8. Start the frontend app
 
 ```bash
 cd Frontend
