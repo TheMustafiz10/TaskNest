@@ -22,7 +22,7 @@ TaskNest is a full-stack task management app with user authentication, task CRUD
 
 ### Project Structure
 
-TaskNest/
+```TaskNest/
     LICENSE
     README.md
     Backend/
@@ -79,7 +79,7 @@ TaskNest/
 	├── tailwind.config.js
 	└── vite.config.js
 
-
+```
 
 ## Setup Instructions
 
