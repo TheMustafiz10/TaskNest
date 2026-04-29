@@ -22,6 +22,8 @@ TaskNest is a full-stack task management app with user authentication, task CRUD
 
 ### Project Structure
 
+```
+
 TaskNest/
 ├── LICENSE
 ├── README.md
